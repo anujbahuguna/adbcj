@@ -1,3 +1,11 @@
 = ADBCJ Tutorial =
 
-Tutorial goes here
+Although ADBCJ is very different from JDBC, we strive to stay consistent with many of the JDBC patterns.  Like JDBC, ADBCJ has an API.  This API is not capable of doing much without a database driver.  Currently ADBCJ has three database drivers, a JDBC wrapper, a MySQL driver, and a Postgresql driver.  The driver that is to be used must register itself with the AJDBC API after which, the driver may be used to connect to a database.
+
+In this tutorial, we will connect to the ADBCJ TCK database on a MySQL database.  See the BuildGuide for information on creating the ADBCJ TCK databases.
+
+== Connecting to a database ==
+
+To use the ADBCJ MySQL driver, you will need the following libraries which are contained in the ADBCJ download:
+|| adbcj-api-0.1.jar ||
+|| adbcj-mysql-0.1.jar ||
