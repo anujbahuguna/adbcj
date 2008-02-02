@@ -84,4 +84,3 @@ connection.executeQuery("SELECT int_val, str_val FROM simple_values ORDER BY int
     }
 }
 }}}
-}}}
