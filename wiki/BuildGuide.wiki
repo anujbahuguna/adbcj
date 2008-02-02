@@ -2,4 +2,24 @@
 
 = ADBCJ Build Guide =
 
-Put build guide here.
+To build ADBCJ, first checkout the code from subversion
+
+{{{
+svn checkout http://adbcj.googlecode.com/svn/adbcj/trunk adbcj
+}}}
+
+Part of the ADBCJ build includes running a suite of compatibility tests against a MySQL database and a Postgresql database.  The tests will currently connect to the database 'adbcjtck' on 'localhost' with the username 'adbcjtck' and the password 'adbcjtck'.
+
+Once you've created these users for each database environment, you must then import the test schema for each database.  The test schemas are located at:
+
+[http://code.google.com/p/adbcj/source/browse/adbcj/trunk/tck/src/schema/sql/mysql.sql tck/src/schema/sql/mysql.sql]
+
+and
+
+[http://code.google.com/p/adbcj/source/browse/adbcj/trunk/tck/src/schema/sql/postgresql.sql tck/src/schema/sql/postgresql.sql]
+
+Once these schema files have been imported into the respective databases, you should be able to run the ADBCJ build using [http://maven.apache.org/ Maven 2] doing:
+
+{{{
+mvn install
+}}}
