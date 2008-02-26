@@ -9,9 +9,9 @@
 || INTEGER                 || 4        || Yes      || java.lang.Integer    || INTEGER     || integer            || integer  ||  ||
 || UNSIGNED_INTEGER        || 4        || No       || java.lang.Long       || INTEGER     || integer unsigned   || N/A      ||  ||
 || BIG_INTEGER             || 8        || Yes      || java.lang.Long       || BIGINT      || bigint             || bigint   ||  ||
-|| BIG_UNSIGNED_INTEGER    || 8        || No       || java.math.BigInteger || BIGINT      || bigint unsigned    || N/A      ||  ||
-|| DECIMAL                 || Variable || Yes      || java.math.BigDecimal || DECIMAL     || decimal            || decimal  ||  ||
-|| NUMERIC                 || Variable || Yes      || java.math.BigDecimal || NUMERIC     || numeric            || numeric  || MySQL protocol indicates DECIMAL for NUMERIC fields ||
+|| BIG_UNSIGNED_INTEGER    || 8        || No       || java.math.!BigInteger || BIGINT      || bigint unsigned    || N/A      ||  ||
+|| DECIMAL                 || Variable || Yes      || java.math.!BigDecimal || DECIMAL     || decimal            || decimal  ||  ||
+|| NUMERIC                 || Variable || Yes      || java.math.!BigDecimal || NUMERIC     || numeric            || numeric  || MySQL protocol indicates DECIMAL for NUMERIC fields ||
 || FLOAT                   || Impl     || Yes      || java.lang.Float      || FLOAT       || float(n)           || float(n) ||  ||
 || REAL                    || Impl     || Yes      || java.lang.Float      || REAL        || real               || real     ||  ||
 || DOUBLE                  || Impl     || Yes      || java.lang.Double     || DOUBLE      || double precision   || double precision ||  ||
