@@ -20,3 +20,4 @@
 === TODO ===
  * Add column referencing SQL standard http://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt
  * For numeric types add column refefrencing exact numeric or approximate numeric
+ * Add API support for determining what types are supported by a particular Connection
