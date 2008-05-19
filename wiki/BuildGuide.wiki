@@ -40,7 +40,7 @@ To then create the adbcjtck database, type:
 createdb -h localhost -U adbcjtck -W adbcjtck
 }}}
 
-Enter the password 'adbcjtck' and the adbcjtck will be created.
+Enter the password 'adbcjtck' and the adbcjtck database will be created.
 
 To import the adbcjtck schema enter:
 {{{
