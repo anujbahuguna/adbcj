@@ -1,5 +1,7 @@
 #summary guide for building adbcj
 
+<wiki:toc/>
+
 = ADBCJ Build Guide =
 
 To build ADBCJ, first checkout the code from subversion
