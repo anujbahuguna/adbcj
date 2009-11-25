@@ -4,10 +4,10 @@
 
 = ADBCJ Build Guide =
 
-To build ADBCJ, first checkout the code from subversion
+To build ADBCJ, first checkout the code from GitHub
 
 {{{
-svn checkout http://adbcj.googlecode.com/svn/adbcj/trunk adbcj
+git clone git://github.com/mheath/adbcj.git
 }}}
 
 Part of the ADBCJ build includes running a suite of compatibility tests against a MySQL database and a Postgresql database.  The tests will currently connect to the database 'adbcjtck' on 'localhost' with the username 'adbcjtck' and the password 'adbcjtck'.
