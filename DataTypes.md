@@ -1,0 +1,24 @@
+## Numeric Data Types ##
+| **Data Type**             | **Bytes**  | **Signed** | **Java Type**          | **JDBC Type** | **[MySQL](http://dev.mysql.com/doc/refman/5.1/en/data-types.html)** | **[Postgresql](http://www.postgresql.org/docs/8.2/static/datatype.html)** | **Notes** |
+|:--------------------------|:-----------|:-----------|:-----------------------|:--------------|:--------------------------------------------------------------------|:--------------------------------------------------------------------------|:----------|
+| TINY\_INTEGER             | 1          | Yes        | java.lang.Byte         | TINYINT       | tinyint                                                             | N/A                                                                       |           |
+| BYTE                      | 1          | No         | java.lang.Short        | TINYINT       | tinyint unsigned                                                    | N/A                                                                       |           |
+| SMALL\_INTEGER            | 2          | Yes        | java.lang.Short        | SMALLINT      | smallint                                                            | smallint                                                                  |           |
+| SHORT                     | 2          | No         | java.lang.Integer      | SMALLINT      | smallint unsigned                                                   | N/A                                                                       |           |
+| MEDIUM\_INTEGER           | 3          | Yes        | java.lang.Integer      | INTEGER       | mediumint                                                           | N/A                                                                       |           |
+| MEDIUM\_UNSIGNED\_INTEGER | 3          | No         | java.lang.Integer      | INTEGER       | mediumint unsigned                                                  | N/A                                                                       |           |
+| INTEGER                   | 4          | Yes        | java.lang.Integer      | INTEGER       | integer                                                             | integer                                                                   |           |
+| UNSIGNED\_INTEGER         | 4          | No         | java.lang.Long         | INTEGER       | integer unsigned                                                    | N/A                                                                       |           |
+| BIG\_INTEGER              | 8          | Yes        | java.lang.Long         | BIGINT        | bigint                                                              | bigint                                                                    |           |
+| BIG\_UNSIGNED\_INTEGER    | 8          | No         | java.math.BigInteger   | BIGINT        | bigint unsigned                                                     | N/A                                                                       |           |
+| DECIMAL                   | Variable   | Yes        | java.math.BigDecimal   | DECIMAL       | decimal                                                             | decimal                                                                   |           |
+| NUMERIC                   | Variable   | Yes        | java.math.BigDecimal   | NUMERIC       | numeric                                                             | numeric                                                                   | MySQL protocol indicates DECIMAL for NUMERIC fields |
+| FLOAT                     | Impl       | Yes        | java.lang.Float        | FLOAT         | float(n)                                                            | float(n)                                                                  |           |
+| REAL                      | Impl       | Yes        | java.lang.Float        | REAL          | real                                                                | real                                                                      |           |
+| DOUBLE                    | Impl       | Yes        | java.lang.Double       | DOUBLE        | double precision                                                    | double precision                                                          |           |
+
+
+### TODO ###
+  * Add column referencing SQL standard http://www.contrib.andrew.cmu.edu/~shadow/sql/sql1992.txt
+  * For numeric types add column refefrencing exact numeric or approximate numeric
+  * Add API support for determining what types are supported by a particular Connection
